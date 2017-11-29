@@ -13,8 +13,17 @@ class WeatherscraperItem(scrapy.Item):
     # name = scrapy.Field()
     pass
 
+
 class TempData(scrapy.Item):
-    temperature = scrapy.Field()
+    actual_mean_temp = scrapy.Field()
+    avg_mean_temp = scrapy.Field()
+    actual_max_temp = scrapy.Field()
+    avg_max_temp = scrapy.Field()
+    record_max_temp = scrapy.Field()
+    actual_min_temp = scrapy.Field()
+    avg_min_temp = scrapy.Field()
+    record_min_temp = scrapy.Field()
+
 
 class InputData(scrapy.Item):
     code = scrapy.Field()   # location. airport or city code
